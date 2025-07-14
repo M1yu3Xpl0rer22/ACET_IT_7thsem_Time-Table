@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>7th Semester Timetable</title>
+    <!DOCTYPE html>
+    <link rel="stylesheet" href="/style.css" >
+   <script src="script.js" defer></script>
+
+    
+  
+    
+<html lang="en">
+<head>
+    <div class="marquee">
+        <marquee behavior="scroll" direction="left" scrollamount="3">
+            Created by: &copy; Mayur Sapkale (M1yu3Xpl0rer22)
+        </marquee>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>7th Semester Timetable</title>
+    
+   
+
+
+
+  
+    </div>
+    <br>
+
+    <div class="container">
+        <div class="header">
+            <h1>7th Semester Timetable</h1>
+            <div class="header-info">
+                <div class="info-item">Room No: A-307 & A-308</div>
+                <div class="info-item">W.E.F: 23-06-2025</div>
+                <div class="info-item">Evening: 5:30 PM - 6:00 PM</div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="legend">
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #e3f2fd;"></div>
+                    <span>Regular Classes</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #f3e5f5;"></div>
+                    <span>Project & Seminar</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #e8f5e8;"></div>
+                    <span>Evening Activities</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #fff3cd;"></div>
+                    <span>Recess</span>
+                </div>
+            </div>
+
+            <table class="timetable">
+                <div id="current-time-display" style="text-align:center; font-weight:bold; font-size: 1.2em; margin: 20px 0;">
+    Current Time (IST): <span id="current-time"></span><br>
+    Ongoing Slot: <span id="current-slot">Calculating...</span>
+</div>
+
+    <thead>
+        <tr>
+            <th>Day</th>
+            <th>10:30 AM <br> 12:30 PM</th>
+            <th>12:30 PM <br>  1:00 PM</th>
+            <th>1:00 PM <br>  2:00 PM</th>
+            <th>2:00 PM <br>  3:00 PM</th>
+            <th>3:00 PM <br>  3:30 PM</th>
+            <th>3:30 PM <br>  4:30 PM</th>
+            <th>4:30 PM <br>  5:30 PM</th>
+            <th>5:30 PM <br>  6:00 PM</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="day-cell">Monday</td>
+            <td class="subject">DW&M(A)/BCF(B)/ES(C)</td>
+            <td class="recess">R<br></td>
+            <td class="subject">MC</td>
+            <td class="subject">DW&M</td>
+            <td class="recess">R</td>
+            <td class="subject">CC</td>
+            <td class="subject">BSF</td>
+            <td class="evening-activity" rowspan="6">
+                Sports,<br>Counseling,<br>Doubt<br>Clearing,<br>Teacher<br>Guardian
+            </td>
+        </tr>
+        <tr>
+            <td class="day-cell">Tuesday</td>
+            <td class="subject">BCF(A)/ES(B)/DW&M(C)</td>
+            <td class="recess">E<br></td>
+            <td class="subject">DW&M</td>
+            <td class="subject">BCF</td>
+            <td class="recess">E<br></td>
+            <td class="subject">CC</td>
+            <td class="subject">ES</td>
+        </tr>
+        <tr>
+            <td class="day-cell">Wednesday</td>
+            <td class="subject">ES(A)/DW&M(B)/BCF(C)</td>
+            <td class="recess">C<br></td>
+            <td class="subject">ES</td>
+            <td class="subject">MC</td>
+            <td class="recess">C<br></td>
+            <td class="special-activity">Project & </td>
+            <td class="special-activity"> Seminar</td>
+        </tr>
+        <tr>
+            <td class="day-cell">Thursday</td>
+            <td class="subject">BCF</td>
+            <td class="recess">E<br></td>
+            <td class="subject">MC</td>
+            <td class="subject">DW&M</td>
+            <td class="recess">E<br></td>
+              <td class="special-activity">Project & </td>
+            <td class="special-activity"> Seminar</td>
+        </tr>
+        <tr>
+            <td class="day-cell">Friday</td>
+            <td class="subject">CC (R)</td>
+            <td class="recess">S<br></td>
+            <td class="subject">ES</td>
+            <td class="subject">Library</td>
+            <td class="recess">S<br></td>
+              <td class="special-activity">Project & </td>
+            <td class="special-activity"> Seminar</td>
+        </tr>
+        <tr>
+            <td class="day-cell">Saturday</td>
+            <td class="subject">MC(R)</td>
+            <td class="recess">S</td>
+            <td class="subject">NPTEL/Swayam/Guest Lect.</td>
+            <td class="subject">NPTEL/Swayam/Guest Lect.</td>
+            <td class="recess">S</td>
+              <td class="special-activity">Project     & </td>
+            <td class="special-activity"> Seminar</td>
+        </tr>
+    </tbody>
+</table>
+
+
+            <div class="lab-info">
+                <h3>Laboratory Information</h3>
+                <div class="lab-grid">
+                    <div class="lab-item"><strong>ES Lab:</strong> A-305</div>
+                    <div class="lab-item"><strong>PE-III (DW&M) Lab:</strong> A-304</div>
+                    <div class="lab-item"><strong>PE-IV (BCF) Lab:</strong> B-303</div>
+                    <div class="lab-item">
+                        <strong>Seminar:</strong> A-304 (1 to 20), A-305 (21 to 40), A-309 (41 to 60), A-306 (61 to Onwards)
+                    </div>
+                </div>
+            </div>
+
+            <div class="staff-info">
+                <h3>Staff Information</h3>
+                <div class="staff-grid">
+                    <div class="staff-item"><strong>ES (TH):</strong> N. B. Mapari</div>
+                    <div class="staff-item"><strong>MC:</strong> P. T. Talole</div>
+                    <div class="staff-item"><strong>PE-III (DW&M):</strong> N. B. Mapari</div>
+                    <div class="staff-item"><strong>PE-IV (BCF):</strong> D. D. Shipne</div>
+                    <div class="staff-item"><strong>CC:</strong> V. D. Parihar</div>
+                    <div class="staff-item"><strong>ES (PR):</strong> V. D. Parihar</div>
+                </div>
+            </div>
+
+            <div class="notes">
+                <h3>Important Notes</h3>
+                <p><strong>Batch Information:</strong> A: 1-24, B: 25-50, C: 51-Onwards</p>
+                <p><strong>*R:</strong> Remedial Lectures</p>
+                <p><strong>Subject Abbreviations:</strong> DW&M (Data Warehousing & Mining), BCF (Blockchain & Cryptocurrency Fundamentals), ES (Embedded Systems), MC (Mobile Computing),
+
+
+</head>
+<body>
+   
