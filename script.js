@@ -115,41 +115,7 @@ function displayCurrentSlotInfo() {
     }
   }
 
-  // Display current slot info
-  let slotInfoHTML = '<div id="current-slot-info" style="margin: 20px 0; padding: 20px; background: #f0f8ff; border-radius: 10px; border: 2px solid #1e3c72; text-align: center;">';
-  
-  if (currentSlotInfo && currentSubject) {
-    const batchDisplay = currentSubject.batches.length > 0 
-      ? ` (Batches: ${currentSubject.batches.join(', ')})`
-      : '';
-    
-    slotInfoHTML += `
-      <div style="font-size: 18px; font-weight: bold; color: #1e3c72; margin-bottom: 10px;">
-        **Ongoing Slot: ${currentSlotInfo.timeSlot}**
-      </div>
-      <div style="font-size: 16px; font-weight: bold; color: #2a5298;">
-        **Subject: ${currentSubject.subject} | Teacher: ${currentSubject.teacher}**
-      </div>
-      <div style="font-size: 14px; color: #666; margin-top: 5px;">
-        ${batchDisplay}
-      </div>
-    `;
-  } else if (currentSlotInfo) {
-    slotInfoHTML += `
-      <div style="font-size: 18px; font-weight: bold; color: #1e3c72; margin-bottom: 10px;">
-        **Ongoing Slot: ${currentSlotInfo.timeSlot}**
-      </div>
-      <div style="font-size: 16px; color: #666;">
-        Break Time or No Class Scheduled
-      </div>
-    `;
-  } else {
-    slotInfoHTML += `
-      <div style="font-size: 16px; color: #666; font-style: italic;">
-        No Ongoing Slot Currently
-      </div>
-    `;
-  }
+ 
   
   slotInfoHTML += '</div>';
   
@@ -175,10 +141,10 @@ function to12HourFormat(time24) {
 }
 
 function updateTimeAndHighlight()  {
-  const testMode = true; // Set to false to use real time
+  const testMode = false; // Set to false to use real time
   const now = new Date();
   if (testMode) {
-    now.setHours(13); // 2 PM
+    now.setHours(14); // 2 PM
     now.setMinutes(10); // 2:15 PM
     now.setSeconds(0);
   }
